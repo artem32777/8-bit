@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230219230646">
+	<link rel="shortcut icon" href="img/favicon.svg">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Описание страницы сайта.">
+</head>
+
+<body>
+	<div class="wrapper">
+		<picture><source srcset="img/bg.webp" type="image/webp"><img src="img/bg.jpg" class="background" alt="Фон"></picture>
+		<header class="header">
+			<h1 hidden>Dark Online - площадка</h1>
+			<nav class="header__container">
+				<a href="index.html" class="header__logo">
+					<picture><source srcset="img/logo-new3.webp" type="image/webp"><img width="140" height="64" src="img/logo-new3.png" alt=""></picture>
+					<!-- <picture><source srcset="img/logo.webp" type="image/webp"><img height="35px" width="140px" src="img/logo.jpg" class="header__logo-img" alt="Логотип компании"></picture> -->
+					<!-- <picture><source srcset="img/logo-dark.webp" type="image/webp"><img height="35px" width="140px" src="img/logo-dark.jpg" class="header__logo-img-dark" alt="Логотип компании"></picture> -->
+				</a>
+				<ul class="header__menu">
+					<li class="header__link"><a href="index.html">Online-мониторинг</a></li>
+					<li class="header__link"><a href="publics.html">Telegram-паблики</a></li>
+					<li class="header__link"><a href="news.html">Новости Порталов</a></li>
+				</ul>
+				<button id="theme-switcher" class="header__language" title="Сменить тему" type="button"><span></span></button>
+				<div title="Меню" type="button" class="header__hamburger hamburger icon-menu">
+					<div class="hamburger__lines">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="hamburger__cross">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<section class="page__searchers spoilers">
+					<h2 class="spoilers__title">Поисковики</h2>
+					<div data-spollers class="spoilers__content">
+						<div class="spoilers__item">
+							<button type="button" data-spoller class="spoilers__button btn-green _spoller-active">
+								<span>
+									<h3 class="spoilers__subtitle">Поисковик №1</h3>
+									<h4 class="spoilers__label">Поисковик включен</h4>
+								</span>
+							</button>
+							<ul class="spoilers__body">
+								<li class="spoilers__link link-orange"><a href="#">https://asdsdsdddsasd.com</a></li>
+								<li class="spoilers__link link-green"><a href="#">https://asdsdsdddsasd.com</a></li>
+								<li class="spoilers__link link-red"><a href="#">https://asdsdsdddsasd.com</a></li>
+							</ul>
+						</div>
+						<div class="spoilers__item">
+							<button type="button" data-spoller class="spoilers__button btn-red _spoller-active">
+								<span>
+									<h3 class="spoilers__subtitle">Поисковик №2</h3>
+									<h4 class="spoilers__label">Поисковик отключен</h4>
+								</span>
+							</button>
+							<ul class="spoilers__body">
+								<li class="spoilers__link link-orange"><a href="#">https://asdsdsdddsasd.com</a></li>
+								<li class="spoilers__link link-orange"><a href="#">https://asdsdsdddsasd.com</a></li>
+								<li class="spoilers__link link-orange"><a href="#">https://asdsdsdddsasd.com</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="page__marketplaces spoilers">
+					<h2 class="spoilers__title">Маркетплейсы</h2>
+					<div data-spollers class="spoilers__content">
+						<div class="spoilers__item">
+							<button type="button" data-spoller class="spoilers__button btn-green">
+								<span>
+									<h3 class="spoilers__subtitle">Маркетплейс №1</h3>
+									<h4 class="spoilers__label">Лучший маркетплейс</h4>
+								</span>
+							</button>
+							<ul class="spoilers__body">
+								<li class="spoilers__link link-green"><a href="#">https://asdsdsdddsasd.com</a></li>
+								<li class="spoilers__link link-green"><a href="#">https://asdsdsdddsasd.com</a></li>
+								<li class="spoilers__link link-green"><a href="#">https://asdsdsdddsasd.com</a></li>
+							</ul>
+						</div>
+						<div class="spoilers__item">
+							<button type="button" data-spoller class="spoilers__button btn-green">
+								<span>
+									<h3 class="spoilers__subtitle">Маркетплейс №2</h3>
+									<h4 class="spoilers__label">Поисковик отключен</h4>
+								</span>
+							</button>
+							<ul class="spoilers__body">
+								<li class="spoilers__link link-red"><a href="#">https://asdsdsdddsasd.com</a></li>
+								<li class="spoilers__link link-red"><a href="#">https://asdsdsdddsasd.com</a></li>
+								<li class="spoilers__link link-red"><a href="#">https://asdsdsdddsasd.com</a></li>
+							</ul>
+						</div>
+						<div class="spoilers__item">
+							<button type="button" data-spoller class="spoilers__button btn-green">
+								<span>
+									<h3 class="spoilers__subtitle">Маркетплейс №3</h3>
+									<h4 class="spoilers__label">Лучший маркетплейс</h4>
+								</span>
+							</button>
+							<ul class="spoilers__body">
+								<li class="spoilers__link link-red"><a href="#">https://asdsdsdddsasd.com</a></li>
+								<li class="spoilers__link link-green"><a href="#">https://asdsdsdddsasd.com</a></li>
+								<li class="spoilers__link link-green"><a href="#">https://asdsdsdddsasd.com</a></li>
+							</ul>
+						</div>
+						<div class="spoilers__item">
+							<button type="button" data-spoller class="spoilers__button btn-red">
+								<span>
+									<h3 class="spoilers__subtitle">Маркетплейс №4</h3>
+									<h4 class="spoilers__label">Поисковик отключен</h4>
+								</span>
+							</button>
+							<ul class="spoilers__body">
+								<li class="spoilers__link link-green"><a href="#">https://asdsdsdddsasd.com</a></li>
+								<li class="spoilers__link link-green"><a href="#">https://asdsdsdddsasd.com</a></li>
+								<li class="spoilers__link link-green"><a href="#">https://asdsdsdddsasd.com</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20230219230646"></script>
+</body>
+
+</html>
