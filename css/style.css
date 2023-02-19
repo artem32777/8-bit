@@ -2,13 +2,15 @@
 
 @font-face {
   font-family: Muller;
-  src: url("../fonts/MullerMedium.woff2") format("woff2"), url("../fonts/MullerMedium.woff") format("woff");
-  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/MullerBold.woff2") format("woff2"), url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: Muller;
+  font-display: swap;
   src: url("../fonts/MullerLight.woff2") format("woff2"), url("../fonts/MullerLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -16,6 +18,7 @@
 
 @font-face {
   font-family: Muller;
+  font-display: swap;
   src: url("../fonts/MullerRegular.woff2") format("woff2"), url("../fonts/MullerRegular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -23,8 +26,9 @@
 
 @font-face {
   font-family: Muller;
-  src: url("../fonts/MullerBold.woff2") format("woff2"), url("../fonts/MullerBold.woff") format("woff");
-  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/MullerMedium.woff2") format("woff2"), url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -587,6 +591,7 @@ h6 {
 
 .spoilers__body {
   padding: 1.4375rem;
+  padding-top: 0rem;
 }
 
 @supports (padding-left: clamp( 0.9375rem , -7.6736111111rem  +  13.8888888889vw , 3.4375rem )) {
@@ -598,18 +603,6 @@ h6 {
 @supports not (padding-left: clamp( 0.9375rem , -7.6736111111rem  +  13.8888888889vw , 3.4375rem )) {
   .spoilers__body {
     padding-left: calc(0.9375rem + 2.5 * (100vw - 62rem) / 18);
-  }
-}
-
-@supports (padding-top: clamp( 0.0000000625rem , -0.4081631824rem  +  2.0408162245vw , 1.25rem )) {
-  .spoilers__body {
-    padding-top: clamp( 0.0000000625rem , -0.4081631824rem  +  2.0408162245vw , 1.25rem );
-  }
-}
-
-@supports not (padding-top: clamp( 0.0000000625rem , -0.4081631824rem  +  2.0408162245vw , 1.25rem )) {
-  .spoilers__body {
-    padding-top: calc(0.0000000625rem + 1.2499999375 * (100vw - 20rem) / 61.25);
   }
 }
 
@@ -659,23 +652,16 @@ h6 {
   background-color: orange;
 }
 
-@supports (margin-bottom: clamp( 0.9375rem , 0.631377551rem  +  1.5306122449vw , 1.875rem )) {
-  .spoilers__link:not(:last-child) {
-    margin-bottom: clamp( 0.9375rem , 0.631377551rem  +  1.5306122449vw , 1.875rem );
-  }
-}
-
-@supports not (margin-bottom: clamp( 0.9375rem , 0.631377551rem  +  1.5306122449vw , 1.875rem )) {
-  .spoilers__link:not(:last-child) {
-    margin-bottom: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 61.25);
-  }
-}
-
 .dark .spoilers__link {
   color: #fff;
 }
 
+.spoilers__link:not(:last-child) {
+  margin-bottom: 0.3125rem;
+}
+
 .spoilers__link a {
+  padding: 0.75rem 0;
   font-weight: 300;
 }
 
@@ -1553,13 +1539,13 @@ h6 {
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   }
 
-  .spoilers__link {
+  .spoilers__link a {
     -webkit-transition: color 0.1s ease 0s;
     -o-transition: color 0.1s ease 0s;
     transition: color 0.1s ease 0s;
   }
 
-  .spoilers__link:hover {
+  .spoilers__link a:hover {
     color: lightskyblue;
   }
 
